@@ -211,3 +211,11 @@ PRODUCT_BOOT_JARS += \
 # Touch
 PRODUCT_PACKAGES += \
     lineage.touch@1.0-service.rmx206x
+
+# OnePlus launcher
+PRODUCT_PACKAGES += \
+    OnePlusRecentsProvider \
+    OPLauncher2
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/etc/permissions/privapp-permissions-op-launcher.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-op-launcher.xml \
+    $(LOCAL_PATH)/prebuilt/etc/sysconfig/op-launcher-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/op-launcher-hiddenapi-package-whitelist.xml
