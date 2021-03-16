@@ -6,8 +6,8 @@
 
 $(call inherit-product, device/realme/RMX206X/device.mk)
 
-# Inherit some common PixelExtended stuff.
-#PEX_BUILD_TYPE := OFFICIAL
+# Inherit some common SSOS stuff.
+
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
 $(call inherit-product, vendor/ssos/config/common_full_phone.mk)
