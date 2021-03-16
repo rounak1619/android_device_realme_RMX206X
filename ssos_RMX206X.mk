@@ -7,9 +7,9 @@
 $(call inherit-product, device/realme/RMX206X/device.mk)
 
 # Inherit some common SSOS stuff.
-
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_INCLUDE_OP_FILE_MANAGER := true
 $(call inherit-product, vendor/ssos/config/common_full_phone.mk)
 
 # All components inherited here go to system_ext image
